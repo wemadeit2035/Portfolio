@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XYLR | Web Development Solutions</title>
-    <link rel="icon" type="image/png" href="/images/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/webp" href="/images/logo.webp">
+<!-- Load only needed icons using Font Awesome's subset functionality -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" media="print" onload="this.media='all'">
 </head>
+
 <body>
     <nav class="navbar">
-            <img title="logo" src="/images/logo.png" str="XYLR" class="logo">
+            <img title="logo" src="/images/logo.webp" str="XYLR" class="logo">
         <div class="nav-links">
             <a href="#projects">Work</a>
             <a href="#skills">Skills</a>
@@ -23,50 +24,22 @@
     <section class="hero">
         <div class="image-slider">
             <div class="slides">
-            <img src="/images/resunate.png" alt="Slide 1">
-            <img src="/images/curronimg.png" alt="Slide 2">
-            <img src="/images/converter.png" alt="Slide 3">
-            <img src="/images/dogbreedexpapp.png" alt="Slide 4">
-            <img src="/images/DigiClockimg.png" alt="Slide 5">
-            <img src="/images/got2go.png" alt="Slide 6">
-            <img src="/images/calimg.png" alt="Slide 7">
-            <img src="/images/colorizerimg.png" alt="Slide 8">
-            <img src="/images/inhouseimg.png" alt="Slide 9">
-            <img src="/images/PrimeFitimage.png" alt="Slide 10">
-            <img src="/images/stopimg.png" alt="Slide 11">
-            <img src="/images/weathappimg.png" alt="Slide 12">
+            <img src="/images/resunate.webp" alt="Slide 1" loading="lazy" width="800" height="600">
+            <img src="/images/curronimg.webp" alt="Slide 2" loading="lazy" width="800" height="600">
+            <img src="/images/converter.webp" alt="Slide 3" loading="lazy" width="800" height="600">
+            <img src="/images/dogbreedexpapp.webp" alt="Slide 4" loading="lazy" width="800" height="600">
+            <img src="/images/DigiClockimg.webp" alt="Slide 5" loading="lazy" width="800" height="600">
+            <img src="/images/got2go.webp" alt="Slide 6" loading="lazy" width="800" height="600">
+            <img src="/images/calimg.webp" alt="Slide 7" loading="lazy" width="800" height="600">
+            <img src="/images/colorizerimg.webp" alt="Slide 8" loading="lazy" width="800" height="600">
+            <img src="/images/inhouseimg.webp" alt="Slide 9" loading="lazy" width="800" height="600">
+            <img src="/images/PrimeFitimage.webp" alt="Slide 10" loading="lazy" width="800" height="600">
+            <img src="/images/stopimg.webp" alt="Slide 11" loading="lazy" width="800" height="600">
+            <img src="/images/weathappimg.webp" alt="Slide 12" loading="lazy" width="800" height="600">
 
             </div>
         </div>
-        <style>
-            .image-slider {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
-            height: 100vh;
-            overflow: hidden;
-            }
-            .slides {
-            display: flex;
-            width: 300%;
-            animation: slide-animation 15s linear infinite;
-            }
-            .slides img {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            }
-            @keyframes slide-animation {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-100% * (var(--slide-count) - 1))); }
-            }
-            .slides {
-            --slide-count: 12; /* Update this variable to match the number of slides */
-            display: flex;
-            animation: slide-animation 30s linear infinite;
-            }
-        </style>
+        
         <div class="hero-content">
             <h1>Transform Ideas into <span>Digital Reality</span></h1>
             <p>Development agency specializing in modern web solutions</p>
@@ -76,7 +49,7 @@
             </a>
         </div>
     </section>
-
+   
     <section class="projects" id="projects">
         <br><br>
         <h2 class="section-title">Featured Projects</h2>
@@ -84,7 +57,7 @@
         <div class="projects-grid">
             
             <a href="https://prymefit.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/primefitimage.png')"></div>
+                <div class="project-image" style="background-image: url('/images/primefitimage.webp')"></div>
                 <div class="project-info">
                     <h3>Personal Trainer Portfolio</h3>
                     <div class="project-tags">
@@ -97,7 +70,7 @@
             </a>
            
             <a href="https://resunate.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/resunate.png')"></div>
+                <div class="project-image" style="background-image: url('/images/resunate.webp')"></div>
                 <div class="project-info">
                     <h3>Resume Builder</h3>
                     <div class="project-tags">
@@ -110,7 +83,7 @@
             </a>
 
             <a href="https://currencon.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/curronimg.png')"></div>
+                <div class="project-image" style="background-image: url('/images/curronimg.webp')"></div>
                 <div class="project-info">
                     <h3>Currency Converter</h3>
                     <div class="project-tags">
@@ -123,7 +96,7 @@
             </a>
 
             <a href="https://curron.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/converter.png')"></div>
+                <div class="project-image" style="background-image: url('/images/converter.webp')"></div>
                 <div class="project-info">
                     <h3>Currency Converter 2.0</h3>
                     <div class="project-tags">
@@ -136,7 +109,7 @@
             </a>
 
             <a href="https://breedfinder.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/dogbreedexpapp.png')"></div>
+                <div class="project-image" style="background-image: url('/images/dogbreedexpapp.webp')"></div>
                 <div class="project-info">
                     <h3>Dog Breed Explorer</h3>
                     <div class="project-tags">
@@ -149,7 +122,7 @@
             </a>
 
             <a href="https://stoptyme.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/stopimg.png')"></div>
+                <div class="project-image" style="background-image: url('/images/stopimg.webp')"></div>
                 <div class="project-info">
                     <h3>StopWatch</h3>
                     <div class="project-tags">
@@ -162,7 +135,7 @@
             </a>
 
             <a href="https://harmonizer.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/colorizerimg.png')"></div>
+                <div class="project-image" style="background-image: url('/images/colorizerimg.webp')"></div>
                 <div class="project-info">
                     <h3>Color Harmonizer Tool</h3>
                     <div class="project-tags">
@@ -175,7 +148,7 @@
             </a>
 
             <a href="https://kloch.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/DigiClockimg.png')"></div>
+                <div class="project-image" style="background-image: url('/images/DigiClockimg.webp')"></div>
                 <div class="project-info">
                     <h3>Digital Clock</h3>
                     <div class="project-tags">
@@ -188,7 +161,7 @@
             </a>
 
             <a href="https://inhouze.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/inhouseimg.png')"></div>
+                <div class="project-image" style="background-image: url('/images/inhouseimg.webp')"></div>
                 <div class="project-info">
                     <h3>Cafe Website</h3>
                     <div class="project-tags">
@@ -201,7 +174,7 @@
             </a>
 
             <a href="https://sciculator.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/calimg.png')"></div>
+                <div class="project-image" style="background-image: url('/images/calimg.webp')"></div>
                 <div class="project-info">
                     <h3>Scientific Calculator</h3>
                     <div class="project-tags">
@@ -214,7 +187,7 @@
             </a>
 
             <a href="https://got2go.netlify.app/" class="project-card">
-                <div class="project-image" style="background-image: url('/images/got2go.png')"></div>
+                <div class="project-image" style="background-image: url('/images/got2go.webp')"></div>
                 <div class="project-info">
                     <h3>Travel Guide</h3>
                     <div class="project-tags">
@@ -294,9 +267,12 @@
             </div>
         </div>
     </section>
-    <section id="about"></section>
-        <h2 class="section-title">About Us</h2>
-        <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 2rem;">
+    <section id="about">
+        <h2 class="section-title">About</h2>
+        <div class="profile-pic">
+            <img src="/images/me.jpg" alt="Profile Picture">
+        </div>
+        <div id="D1">
             <p>
                 At XYLR Technologies, we are passionate about crafting innovative web solutions that bring your ideas to life. 
                 With a focus on modern design, cutting-edge technology, and seamless user experiences, we aim to deliver 
@@ -312,7 +288,6 @@
             </p>
         </div>
     </section>
-    <br>
     <footer>
         <div class="social-links">
             <a title="github" href="https://github.com/tripsound"><i class="fab fa-github"></i></a>
@@ -321,6 +296,5 @@
         </div>
         <p>&copy; 2023 XYLR Technologies. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
