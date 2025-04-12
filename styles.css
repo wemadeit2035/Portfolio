@@ -179,20 +179,27 @@ color: var(--accent-color);
     .projects-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 1rem;
-        padding: 1rem;
+        gap: 2rem;
+        padding: 2rem;
     }
 
     .project-card {
-        background: var(--bg-dark);
+        background: rgba(0, 0, 0, 0.6); /* Set background opacity to 0.5 */
         border-radius: 15px;
         overflow: hidden;
-    }
+        position: relative; /* Ensure positioning for child elements */
+        }
 
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
     .project-image {
         height: 250px;
         background-size: cover;
         background-position: center;
+        
     }
 
     .project-info {
@@ -233,7 +240,7 @@ color: var(--accent-color);
     .skill-item {
         text-align: center;
         padding: 1.5rem;
-        background: rgba(84, 81, 81, 0.504);
+        background: rgba(84, 81, 81, 0.635);
         border-radius: 10px;
     }
 
@@ -272,10 +279,10 @@ color: var(--accent-color);
 
     /* Footer */
     footer {
-        background: var(--bg-dark);
+        background: rgba(0, 0, 0, 0.9); /* Set background opacity to 0.9 */
         padding: 1rem 5%;
         text-align: center;
-        opacity: 0.9;
+        color: var(--text-light); /* Ensure text color remains unaffected */
     }
 
     .social-links {
