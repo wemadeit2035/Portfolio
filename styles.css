@@ -66,7 +66,8 @@
             display: flex;
             align-items: center;
             padding: 0;
-            background: linear-gradient(45deg, var(--bg-dark) 50%, rgba(0,0,0,0.1) 100%);
+            background: url('images/omid.jpg') no-repeat center center/cover;
+            color: var(--text-light);
             position: relative;
             overflow: hidden;
         }
@@ -90,7 +91,6 @@
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
         }
 
         .cta-button {
@@ -112,13 +112,15 @@
 
         /* Projects Grid */
         .projects {
-            padding: 1rem;
+            padding: 0rem;
+            padding-bottom: 1rem;
         }
 
         .section-title {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             text-align: center;
+            background: var(--bg-dark);
         }
         a {
     text-decoration: none;
@@ -128,7 +130,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 1rem;
-            padding: 0rem;
+            padding: 1rem;
         }
 
         .project-card {
@@ -164,7 +166,7 @@
 
         /* Skills Section */
         .skills {
-            padding: 5rem;
+            padding: 4rem;
             background: var(--bg-dark);
         }
 
@@ -175,6 +177,7 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
+            padding-bottom: 5rem;
         }
 
         .skill-item {
@@ -192,7 +195,8 @@
 
         /* Contact Section */
         .contact {
-            padding: 2rem;
+            padding: 0rem;
+            padding-bottom: 5rem;
         }
 
         .contact-grid {

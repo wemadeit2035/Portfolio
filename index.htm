@@ -21,7 +21,52 @@
     </nav>
 
     <section class="hero">
-        <canvas class="particles"></canvas>
+        <div class="image-slider">
+            <div class="slides">
+            <img src="/images/resunate.png" alt="Slide 1">
+            <img src="/images/curronimg.png" alt="Slide 2">
+            <img src="/images/converter.png" alt="Slide 3">
+            <img src="/images/dogbreedexpapp.png" alt="Slide 4">
+            <img src="/images/DigiClockimg.png" alt="Slide 5">
+            <img src="/images/got2go.png" alt="Slide 6">
+            <img src="/images/calimg.png" alt="Slide 7">
+            <img src="/images/colorizerimg.png" alt="Slide 8">
+            <img src="/images/inhouseimg.png" alt="Slide 9">
+            <img src="/images/PrimeFitimage.png" alt="Slide 10">
+            <img src="/images/stopimg.png" alt="Slide 11">
+            <img src="/images/weathappimg.png" alt="Slide 12">
+
+            </div>
+        </div>
+        <style>
+            .image-slider {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            overflow: hidden;
+            }
+            .slides {
+            display: flex;
+            width: 300%;
+            animation: slide-animation 15s linear infinite;
+            }
+            .slides img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            }
+            @keyframes slide-animation {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-100% * (var(--slide-count) - 1))); }
+            }
+            .slides {
+            --slide-count: 12; /* Update this variable to match the number of slides */
+            display: flex;
+            animation: slide-animation 30s linear infinite;
+            }
+        </style>
         <div class="hero-content">
             <h1>Transform Ideas into <span>Digital Reality</span></h1>
             <p>Development agency specializing in modern web solutions</p>
@@ -33,7 +78,9 @@
     </section>
 
     <section class="projects" id="projects">
+        <br><br>
         <h2 class="section-title">Featured Projects</h2>
+        <br><br>
         <div class="projects-grid">
             
             <a href="https://prymefit.netlify.app/" class="project-card">
@@ -79,8 +126,8 @@
                 <div class="project-image" style="background-image: url('/images/converter.png')"></div>
                 <div class="project-info">
                     <h3>Currency Converter 2.0</h3>
-                    <span class="tag">NEXT.JS</span>
                     <div class="project-tags">
+                    <span class="tag">NEXT.JS</span>
                         <span class="tag">TAILWIND</span>
                         <span class="tag">TYPESCRIPT</span>
                     </div>
@@ -119,9 +166,9 @@
                 <div class="project-info">
                     <h3>Color Harmonizer Tool</h3>
                     <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Supabase</span>
-                        <span class="tag">Typescript</span>
+                        <span class="tag">REACT</span>
+                        <span class="tag">SUPABASE</span>
+                        <span class="tag">TYPESCRIPT</span>
                     </div>
                     <p>This tool is for designers who seek to use colors that complement each other perfectly.</p>
                 </div>
@@ -134,7 +181,7 @@
                     <div class="project-tags">
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
-                        <span class="tag">Javascript</span>
+                        <span class="tag">JAVASCRIPT</span>
                     </div>
                     <p>Simple but fully functional digital clock with the date and time zone.</p>
                 </div>
@@ -147,9 +194,9 @@
                     <div class="project-tags">
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
-                        <span class="tag">Javascript</span>
+                        <span class="tag">JAVASCRIPT</span>
                     </div>
-                    <p>Minimalistic cafe website focused on usability and readability.</p>
+                    <p>Minimalistic cafe website template focused on usability and readability.</p>
                 </div>
             </a>
 
@@ -181,8 +228,10 @@
             <!-- Add more project cards -->
         </div>
     </section>
+    <br><br>
     <section id="skills">
     <h2 class="section-title">Technical Expertise</h2>
+    <br>
     <div class="skills-grid">
         <div class="skill-item">
             <i class="fab fa-js-square skill-icon"></i>
@@ -228,6 +277,8 @@
 </section>
 
     <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <br><br>
         <div class="contact-grid">
             <form class="contact-form">
                 <input type="text" placeholder="Name" required>
@@ -237,7 +288,7 @@
             </form>
             <div class="contact-info">
                 <h3>Let's Build Something Amazing</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Johanesburg, GP</p>
+                <p><i class="fas fa-map-marker-alt"></i> Johannesburg, GP</p>
                 <p><i class="fas fa-phone"></i> (+27) 744 610 850</p>
                 <p><i class="fas fa-envelope"></i> info@xylr.dev</p>
             </div>
@@ -261,6 +312,7 @@
             </p>
         </div>
     </section>
+    <br>
     <footer>
         <div class="social-links">
             <a title="github" href="https://github.com/tripsound"><i class="fab fa-github"></i></a>
