@@ -122,9 +122,9 @@
     }
 
     a {
-text-decoration: none;
-color: var(--accent-color);
-}
+        text-decoration: none;
+        color: var(--accent-color);
+    }
 
     .projects-grid {
         display: grid;
@@ -254,35 +254,103 @@ color: var(--accent-color);
         color: var(--accent-color);
     }
 
-    @media (max-width: 768px) {
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            background: rgba(26, 26, 26, 0.95);
-            position: absolute;
-            top: 50px;
-            right: 0;
-            width: 100%;
-            padding: 1rem;
-        }
-
-        .nav-links.active {
-            display: flex;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-        }
-
-        .contact-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .menu-toggle {
-            display: block;
-        }
+    /* Existing media query for devices with max-width of 768px */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(26, 26, 26, 0.95);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
     }
 
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Reduced font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Adjusted paragraph font size */
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem; /* Reduced padding for buttons */
+        font-size: 1rem; /* Adjusted font size */
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr; /* Single column layout for contact section */
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column layout for projects */
+    }
+
+    .project-card {
+        margin: 0 auto; /* Center project cards */
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted column size */
+    }
+
+    .profile-pic img {
+        width: 150px; /* Reduced profile picture size */
+        height: 150px;
+    }
+
+    #D1 {
+        margin: 1rem; /* Reduced margin for better spacing */
+        padding: 0.8rem; /* Adjusted padding */
+    }
+
+    footer {
+        padding: 1rem; /* Reduced footer padding */
+    }
+}
+
+/* Additional media query for very small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem; /* Further reduced font size */
+    }
+
+    .hero p {
+        font-size: 0.9rem; /* Adjusted paragraph font size */
+    }
+
+    .cta-button {
+        padding: 0.6rem 1rem; /* Smaller padding for buttons */
+        font-size: 0.9rem; /* Adjusted font size */
+    }
+
+    .navbar {
+        padding: 0.5rem; /* Reduced navbar padding */
+        height: auto; /* Adjusted height */
+    }
+
+    .nav-links {
+        gap: 1rem; /* Reduced gap between links */
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; /* Single column layout for skills */
+    }
+
+    .contact-grid {
+        padding: 1rem; /* Adjusted padding for contact section */
+    }
+
+    .social-links a {
+        font-size: 1.2rem; /* Reduced icon size */
+    }
+}
     /* Animations */
     @keyframes float {
         0%, 100% { transform: translateY(0); }
