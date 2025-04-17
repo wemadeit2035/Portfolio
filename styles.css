@@ -107,56 +107,6 @@
         transform: translateY(-3px);
     }
 
-    .image-slider {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    .slides {
-        display: flex;
-        width: 300%;
-        animation: slide-animation 15s linear infinite;
-    }
-
-    .slides img {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-    }
-
-    @keyframes slide-animation {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-100% * (var(--slide-count) - 1))); }
-    }
-
-    .slides {
-        --slide-count: 12; /* Update this variable to match the number of slides */
-        display: flex;
-        animation: slide-animation 30s linear infinite;
-    }
-
-    @media (max-width: 768px) {
-        .hero {
-            flex-direction: column; /* Stack content vertically on small screens */
-            justify-content: flex-start; /* Keep content aligned to the left */
-            text-align: left;
-        }
-
-        .image-slider {
-            position: static; /* Remove absolute positioning on small screens */
-            width: 100%;
-            height: auto;
-        }
-
-        .slides img {
-            height: auto;
-        }
-    }
-    
     /* Projects Grid */
     .projects {
         padding: 0rem;
