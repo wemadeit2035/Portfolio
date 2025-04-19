@@ -16,8 +16,6 @@
             });
         });
 
-      
-
         // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -28,15 +26,14 @@
             });
         });
 
-        // Form Submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will respond within 24 hours.');
-            this.reset();
-        });
-
         // Resize Handler
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
         });
+
+         // Clear Form After Submission
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+        form.reset(); // Clear all form fields
+    });
