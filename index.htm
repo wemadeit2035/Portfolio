@@ -26,8 +26,8 @@
        
         
         <div class="hero-content">
-            <h1>Transform Ideas into <span>Digital Reality</span></h1>
-            <p>Freelance web developer specializing in modern web design</p>
+            <h1>Welcome To My <span>Portfolio Website</span></h1>
+            <p>Freelance developer specializing in modern web design</p>
             <a href="#contact" class="cta-button">
                 <i class="fas fa-paper-plane"></i>
                 Get In Touch
@@ -273,23 +273,27 @@
 </section>
 
     <section class="contact" id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <br><br>
-        <div class="contact-grid">
-            <form class="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea rows="5" placeholder="Project Details" required></textarea>
-                <button class="cta-button">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <h3>Let's Build Something Amazing</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Johannesburg, GP</p>
-                <p><i class="fas fa-phone"></i> (+27) 744 610 850</p>
-                <p><i class="fas fa-envelope"></i> amoswetu22@gmail.com</p>
-            </div>
+    <h2 class="section-title">Get In Touch</h2>
+    <br><br>
+    <div class="contact-grid">
+        <form class="contact_form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="18b30564-8475-4d84-aea8-4beba8411a7c">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="5" placeholder="Project Details" required></textarea>
+            <!-- Honeypot field for spam prevention -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h3>Let's Build Something Amazing</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Johannesburg, GP</p>
+            <p><i class="fas fa-phone"></i> (+27) 744 610 850</p>
+            <p><i class="fas fa-envelope"></i> amoswetu22@gmail.com</p>
         </div>
-    </section>
+    </div>
+</section>
+
     <section id="about">
         <h2 class="section-title">About</h2>
         <div class="profile-pic">
