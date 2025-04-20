@@ -114,6 +114,7 @@
     }
 
     .section-title {
+        position: static;
         font-size: 2.5rem;
         margin-bottom: 0rem;
         text-align: center;
@@ -380,6 +381,11 @@
         width: 40px;
         margin-top: 0px;
         transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+        transform: scale(1.2) rotate(10deg);
+        transition: transform 0.3s ease-in-out;
     }
     #about {
         text-align: center; 
